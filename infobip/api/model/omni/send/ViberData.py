@@ -10,17 +10,17 @@ from infobip.util.TimeUnit import TimeUnit
 
 class ViberData(DefaultObject):
     @property
-    @serializable(name="imageURL", type=unicode)
+    @serializable(name="imageURL", type='basestring')
     def image_u_r_l(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("image_u_r_l")
 
     @image_u_r_l.setter
     def image_u_r_l(self, image_u_r_l):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("image_u_r_l", image_u_r_l)
 
@@ -29,17 +29,17 @@ class ViberData(DefaultObject):
         return self
 
     @property
-    @serializable(name="buttonText", type=unicode)
+    @serializable(name="buttonText", type='basestring')
     def button_text(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("button_text")
 
     @button_text.setter
     def button_text(self, button_text):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("button_text", button_text)
 
@@ -48,17 +48,17 @@ class ViberData(DefaultObject):
         return self
 
     @property
-    @serializable(name="buttonURL", type=unicode)
+    @serializable(name="buttonURL", type='basestring')
     def button_u_r_l(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("button_u_r_l")
 
     @button_u_r_l.setter
     def button_u_r_l(self, button_u_r_l):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("button_u_r_l", button_u_r_l)
 
@@ -86,17 +86,17 @@ class ViberData(DefaultObject):
         return self
 
     @property
-    @serializable(name="text", type=unicode)
+    @serializable(name="text", type='basestring')
     def text(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("text")
 
     @text.setter
     def text(self, text):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("text", text)
 
@@ -105,17 +105,17 @@ class ViberData(DefaultObject):
         return self
 
     @property
-    @serializable(name="validityPeriod", type=long)
+    @serializable(name="validityPeriod", type=float)
     def validity_period(self):
         """
-        Property is of type: long
+        Property is of type: float
         """
         return self.get_field_value("validity_period")
 
     @validity_period.setter
     def validity_period(self, validity_period):
         """
-        Property is of type: long
+        Property is of type: float
         """
         self.set_field_value("validity_period", validity_period)
 

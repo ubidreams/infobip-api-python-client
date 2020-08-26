@@ -10,17 +10,17 @@ from infobip.api.model.omni.To import To
 
 class Destination(DefaultObject):
     @property
-    @serializable(name="messageId", type=unicode)
+    @serializable(name="messageId", type='basestring')
     def message_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("message_id")
 
     @message_id.setter
     def message_id(self, message_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("message_id", message_id)
 

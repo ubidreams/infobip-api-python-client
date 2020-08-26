@@ -10,17 +10,17 @@ from infobip.api.model.sms.mt.bulks.status.BulkStatus import BulkStatus
 
 class BulkStatusResponse(DefaultObject):
     @property
-    @serializable(name="bulkId", type=unicode)
+    @serializable(name="bulkId", type='basestring')
     def bulk_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("bulk_id")
 
     @bulk_id.setter
     def bulk_id(self, bulk_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("bulk_id", bulk_id)
 

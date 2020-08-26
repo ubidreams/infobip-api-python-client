@@ -29,17 +29,17 @@ class OmniSimpleRequest(DefaultObject):
         return self
 
     @property
-    @serializable(name="bulkId", type=unicode)
+    @serializable(name="bulkId", type='basestring')
     def bulk_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("bulk_id")
 
     @bulk_id.setter
     def bulk_id(self, bulk_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("bulk_id", bulk_id)
 
@@ -48,17 +48,17 @@ class OmniSimpleRequest(DefaultObject):
         return self
 
     @property
-    @serializable(name="scenarioKey", type=unicode)
+    @serializable(name="scenarioKey", type='basestring')
     def scenario_key(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("scenario_key")
 
     @scenario_key.setter
     def scenario_key(self, scenario_key):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("scenario_key", scenario_key)
 
@@ -67,17 +67,17 @@ class OmniSimpleRequest(DefaultObject):
         return self
 
     @property
-    @serializable(name="text", type=unicode)
+    @serializable(name="text", type='basestring')
     def text(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("text")
 
     @text.setter
     def text(self, text):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("text", text)
 
@@ -86,17 +86,17 @@ class OmniSimpleRequest(DefaultObject):
         return self
 
     @property
-    @serializable(name="mailSubject", type=unicode)
+    @serializable(name="mailSubject", type='basestring')
     def mail_subject(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("mail_subject")
 
     @mail_subject.setter
     def mail_subject(self, mail_subject):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("mail_subject", mail_subject)
 

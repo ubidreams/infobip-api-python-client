@@ -13,17 +13,17 @@ from infobip.api.model.sms.mt.send.DeliveryTimeWindow import DeliveryTimeWindow
 
 class Message(DefaultObject):
     @property
-    @serializable(name="from", type=unicode)
+    @serializable(name="from", type='basestring')
     def from_(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("from_")
 
     @from_.setter
     def from_(self, from_):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("from_", from_)
 
@@ -32,17 +32,17 @@ class Message(DefaultObject):
         return self
 
     @property
-    @serializable(name="to", type=unicode)
+    @serializable(name="to", type='basestring')
     def to(self):
         """
-        Property is a list of: unicode
+        Property is a list of: 'basestring'
         """
         return self.get_field_value("to")
 
     @to.setter
     def to(self, to):
         """
-        Property is a list of: unicode
+        Property is a list of: 'basestring'
         """
         self.set_field_value("to", to)
 
@@ -70,17 +70,17 @@ class Message(DefaultObject):
         return self
 
     @property
-    @serializable(name="text", type=unicode)
+    @serializable(name="text", type='basestring')
     def text(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("text")
 
     @text.setter
     def text(self, text):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("text", text)
 
@@ -146,17 +146,17 @@ class Message(DefaultObject):
         return self
 
     @property
-    @serializable(name="transliteration", type=unicode)
+    @serializable(name="transliteration", type='basestring')
     def transliteration(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("transliteration")
 
     @transliteration.setter
     def transliteration(self, transliteration):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("transliteration", transliteration)
 
@@ -203,17 +203,17 @@ class Message(DefaultObject):
         return self
 
     @property
-    @serializable(name="notifyUrl", type=unicode)
+    @serializable(name="notifyUrl", type='basestring')
     def notify_url(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("notify_url")
 
     @notify_url.setter
     def notify_url(self, notify_url):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("notify_url", notify_url)
 
@@ -222,17 +222,17 @@ class Message(DefaultObject):
         return self
 
     @property
-    @serializable(name="notifyContentType", type=unicode)
+    @serializable(name="notifyContentType", type='basestring')
     def notify_content_type(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("notify_content_type")
 
     @notify_content_type.setter
     def notify_content_type(self, notify_content_type):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("notify_content_type", notify_content_type)
 
@@ -241,17 +241,17 @@ class Message(DefaultObject):
         return self
 
     @property
-    @serializable(name="callbackData", type=unicode)
+    @serializable(name="callbackData", type='basestring')
     def callback_data(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("callback_data")
 
     @callback_data.setter
     def callback_data(self, callback_data):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("callback_data", callback_data)
 
@@ -260,17 +260,17 @@ class Message(DefaultObject):
         return self
 
     @property
-    @serializable(name="validityPeriod", type=long)
+    @serializable(name="validityPeriod", type=float)
     def validity_period(self):
         """
-        Property is of type: long
+        Property is of type: float
         """
         return self.get_field_value("validity_period")
 
     @validity_period.setter
     def validity_period(self, validity_period):
         """
-        Property is of type: long
+        Property is of type: float
         """
         self.set_field_value("validity_period", validity_period)
 
@@ -317,17 +317,17 @@ class Message(DefaultObject):
         return self
 
     @property
-    @serializable(name="campaignId", type=unicode)
+    @serializable(name="campaignId", type='basestring')
     def campaign_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("campaign_id")
 
     @campaign_id.setter
     def campaign_id(self, campaign_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("campaign_id", campaign_id)
 
@@ -336,17 +336,17 @@ class Message(DefaultObject):
         return self
 
     @property
-    @serializable(name="operatorClientId", type=unicode)
+    @serializable(name="operatorClientId", type='basestring')
     def operator_client_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("operator_client_id")
 
     @operator_client_id.setter
     def operator_client_id(self, operator_client_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("operator_client_id", operator_client_id)
 

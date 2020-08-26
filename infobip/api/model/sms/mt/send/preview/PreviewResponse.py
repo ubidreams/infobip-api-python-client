@@ -10,17 +10,17 @@ from infobip.api.model.sms.mt.send.preview.Preview import Preview
 
 class PreviewResponse(DefaultObject):
     @property
-    @serializable(name="originalText", type=unicode)
+    @serializable(name="originalText", type='basestring')
     def original_text(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("original_text")
 
     @original_text.setter
     def original_text(self, original_text):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("original_text", original_text)
 

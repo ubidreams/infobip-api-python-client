@@ -29,17 +29,17 @@ class CampaignsResponse(DefaultObject):
         return self
 
     @property
-    @serializable(name="campaignCount", type=long)
+    @serializable(name="campaignCount", type=float)
     def campaign_count(self):
         """
-        Property is of type: long
+        Property is of type: float
         """
         return self.get_field_value("campaign_count")
 
     @campaign_count.setter
     def campaign_count(self, campaign_count):
         """
-        Property is of type: long
+        Property is of type: float
         """
         self.set_field_value("campaign_count", campaign_count)
 

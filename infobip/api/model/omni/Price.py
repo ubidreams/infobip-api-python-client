@@ -48,17 +48,17 @@ class Price(DefaultObject):
         return self
 
     @property
-    @serializable(name="currency", type=unicode)
+    @serializable(name="currency", type='basestring')
     def currency(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("currency")
 
     @currency.setter
     def currency(self, currency):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("currency", currency)
 

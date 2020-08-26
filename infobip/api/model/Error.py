@@ -27,17 +27,17 @@ class Error(DefaultObject):
         return self
 
     @property
-    @serializable(name="groupName", type=unicode)
+    @serializable(name="groupName", type='basestring')
     def group_name(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("group_name")
 
     @group_name.setter
     def group_name(self, group_name):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("group_name", group_name)
 
@@ -65,17 +65,17 @@ class Error(DefaultObject):
         return self
 
     @property
-    @serializable(name="name", type=unicode)
+    @serializable(name="name", type='basestring')
     def name(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("name")
 
     @name.setter
     def name(self, name):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("name", name)
 
@@ -84,17 +84,17 @@ class Error(DefaultObject):
         return self
 
     @property
-    @serializable(name="description", type=unicode)
+    @serializable(name="description", type='basestring')
     def description(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("description")
 
     @description.setter
     def description(self, description):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("description", description)
 

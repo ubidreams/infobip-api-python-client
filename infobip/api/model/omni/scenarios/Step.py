@@ -10,17 +10,17 @@ from infobip.api.model.omni.OmniChannel import OmniChannel
 
 class Step(DefaultObject):
     @property
-    @serializable(name="from", type=unicode)
+    @serializable(name="from", type='basestring')
     def from_(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("from_")
 
     @from_.setter
     def from_(self, from_):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("from_", from_)
 

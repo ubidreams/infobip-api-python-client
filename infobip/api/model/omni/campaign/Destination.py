@@ -10,17 +10,17 @@ from infobip.api.model.omni.campaign.Gender import Gender
 
 class Destination(DefaultObject):
     @property
-    @serializable(name="firstName", type=unicode)
+    @serializable(name="firstName", type='basestring')
     def first_name(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("first_name")
 
     @first_name.setter
     def first_name(self, first_name):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("first_name", first_name)
 
@@ -29,17 +29,17 @@ class Destination(DefaultObject):
         return self
 
     @property
-    @serializable(name="lastName", type=unicode)
+    @serializable(name="lastName", type='basestring')
     def last_name(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("last_name")
 
     @last_name.setter
     def last_name(self, last_name):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("last_name", last_name)
 
@@ -48,17 +48,17 @@ class Destination(DefaultObject):
         return self
 
     @property
-    @serializable(name="middleName", type=unicode)
+    @serializable(name="middleName", type='basestring')
     def middle_name(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("middle_name")
 
     @middle_name.setter
     def middle_name(self, middle_name):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("middle_name", middle_name)
 
@@ -67,17 +67,17 @@ class Destination(DefaultObject):
         return self
 
     @property
-    @serializable(name="gsm", type=unicode)
+    @serializable(name="gsm", type='basestring')
     def gsm(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("gsm")
 
     @gsm.setter
     def gsm(self, gsm):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("gsm", gsm)
 
@@ -86,17 +86,17 @@ class Destination(DefaultObject):
         return self
 
     @property
-    @serializable(name="landline", type=unicode)
+    @serializable(name="landline", type='basestring')
     def landline(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("landline")
 
     @landline.setter
     def landline(self, landline):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("landline", landline)
 
@@ -105,17 +105,17 @@ class Destination(DefaultObject):
         return self
 
     @property
-    @serializable(name="email", type=unicode)
+    @serializable(name="email", type='basestring')
     def email(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("email")
 
     @email.setter
     def email(self, email):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("email", email)
 
@@ -124,17 +124,17 @@ class Destination(DefaultObject):
         return self
 
     @property
-    @serializable(name="address", type=unicode)
+    @serializable(name="address", type='basestring')
     def address(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("address")
 
     @address.setter
     def address(self, address):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("address", address)
 
@@ -143,17 +143,17 @@ class Destination(DefaultObject):
         return self
 
     @property
-    @serializable(name="city", type=unicode)
+    @serializable(name="city", type='basestring')
     def city(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("city")
 
     @city.setter
     def city(self, city):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("city", city)
 
@@ -162,17 +162,17 @@ class Destination(DefaultObject):
         return self
 
     @property
-    @serializable(name="country", type=unicode)
+    @serializable(name="country", type='basestring')
     def country(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("country")
 
     @country.setter
     def country(self, country):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("country", country)
 
@@ -200,17 +200,17 @@ class Destination(DefaultObject):
         return self
 
     @property
-    @serializable(name="birthday", type=unicode)
+    @serializable(name="birthday", type='basestring')
     def birthday(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("birthday")
 
     @birthday.setter
     def birthday(self, birthday):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("birthday", birthday)
 

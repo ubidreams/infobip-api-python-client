@@ -13,17 +13,17 @@ from infobip.api.model.omni.Error import Error
 
 class OMNIReport(DefaultObject):
     @property
-    @serializable(name="bulkId", type=unicode)
+    @serializable(name="bulkId", type='basestring')
     def bulk_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("bulk_id")
 
     @bulk_id.setter
     def bulk_id(self, bulk_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("bulk_id", bulk_id)
 
@@ -32,17 +32,17 @@ class OMNIReport(DefaultObject):
         return self
 
     @property
-    @serializable(name="messageId", type=unicode)
+    @serializable(name="messageId", type='basestring')
     def message_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("message_id")
 
     @message_id.setter
     def message_id(self, message_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("message_id", message_id)
 
@@ -51,17 +51,17 @@ class OMNIReport(DefaultObject):
         return self
 
     @property
-    @serializable(name="to", type=unicode)
+    @serializable(name="to", type='basestring')
     def to(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("to")
 
     @to.setter
     def to(self, to):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("to", to)
 
@@ -127,17 +127,17 @@ class OMNIReport(DefaultObject):
         return self
 
     @property
-    @serializable(name="mccMnc", type=unicode)
+    @serializable(name="mccMnc", type='basestring')
     def mcc_mnc(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("mcc_mnc")
 
     @mcc_mnc.setter
     def mcc_mnc(self, mcc_mnc):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("mcc_mnc", mcc_mnc)
 

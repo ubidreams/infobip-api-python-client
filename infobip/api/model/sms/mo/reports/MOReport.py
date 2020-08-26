@@ -10,17 +10,17 @@ from infobip.api.model.Price import Price
 
 class MOReport(DefaultObject):
     @property
-    @serializable(name="messageId", type=unicode)
+    @serializable(name="messageId", type='basestring')
     def message_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("message_id")
 
     @message_id.setter
     def message_id(self, message_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("message_id", message_id)
 
@@ -29,17 +29,17 @@ class MOReport(DefaultObject):
         return self
 
     @property
-    @serializable(name="from", type=unicode)
+    @serializable(name="from", type='basestring')
     def from_(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("from_")
 
     @from_.setter
     def from_(self, from_):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("from_", from_)
 
@@ -48,17 +48,17 @@ class MOReport(DefaultObject):
         return self
 
     @property
-    @serializable(name="to", type=unicode)
+    @serializable(name="to", type='basestring')
     def to(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("to")
 
     @to.setter
     def to(self, to):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("to", to)
 
@@ -67,17 +67,17 @@ class MOReport(DefaultObject):
         return self
 
     @property
-    @serializable(name="text", type=unicode)
+    @serializable(name="text", type='basestring')
     def text(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("text")
 
     @text.setter
     def text(self, text):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("text", text)
 
@@ -86,17 +86,17 @@ class MOReport(DefaultObject):
         return self
 
     @property
-    @serializable(name="cleanText", type=unicode)
+    @serializable(name="cleanText", type='basestring')
     def clean_text(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("clean_text")
 
     @clean_text.setter
     def clean_text(self, clean_text):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("clean_text", clean_text)
 
@@ -105,17 +105,17 @@ class MOReport(DefaultObject):
         return self
 
     @property
-    @serializable(name="keyword", type=unicode)
+    @serializable(name="keyword", type='basestring')
     def keyword(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("keyword")
 
     @keyword.setter
     def keyword(self, keyword):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("keyword", keyword)
 
@@ -181,17 +181,17 @@ class MOReport(DefaultObject):
         return self
 
     @property
-    @serializable(name="callbackData", type=unicode)
+    @serializable(name="callbackData", type='basestring')
     def callback_data(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("callback_data")
 
     @callback_data.setter
     def callback_data(self, callback_data):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("callback_data", callback_data)
 

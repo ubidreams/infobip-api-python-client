@@ -8,17 +8,17 @@ from infobip.util.models import DefaultObject, serializable
 
 class Campaign(DefaultObject):
     @property
-    @serializable(name="key", type=unicode)
+    @serializable(name="key", type='basestring')
     def key(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("key")
 
     @key.setter
     def key(self, key):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("key", key)
 
@@ -27,17 +27,17 @@ class Campaign(DefaultObject):
         return self
 
     @property
-    @serializable(name="name", type=unicode)
+    @serializable(name="name", type='basestring')
     def name(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("name")
 
     @name.setter
     def name(self, name):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("name", name)
 

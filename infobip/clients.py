@@ -2,7 +2,7 @@
 """This is a generated class and is not intended for modification!
 """
 
-from util.http import HttpClient
+from .util.http import HttpClient
 
 
 class get_received_sms_logs(object):
@@ -208,7 +208,6 @@ class send_single_textual_sms(object):
 
     def execute(self, s_m_s_textual_request):
         from infobip.api.model.sms.mt.send.SMSResponse import SMSResponse
-
         http_client = HttpClient()
         return http_client.getValue("POST", self.configuration, "/sms/1/text/single", None, None, s_m_s_textual_request, SMSResponse)
 

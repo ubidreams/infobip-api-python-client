@@ -10,17 +10,17 @@ from infobip.api.model.sms.mt.send.binary.BinaryContent import BinaryContent
 
 class SMSBinaryRequest(DefaultObject):
     @property
-    @serializable(name="from", type=unicode)
+    @serializable(name="from", type='basestring')
     def from_(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("from_")
 
     @from_.setter
     def from_(self, from_):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("from_", from_)
 
@@ -29,17 +29,17 @@ class SMSBinaryRequest(DefaultObject):
         return self
 
     @property
-    @serializable(name="to", type=unicode)
+    @serializable(name="to", type='basestring')
     def to(self):
         """
-        Property is a list of: unicode
+        Property is a list of: 'basestring'
         """
         return self.get_field_value("to")
 
     @to.setter
     def to(self, to):
         """
-        Property is a list of: unicode
+        Property is a list of: 'basestring'
         """
         self.set_field_value("to", to)
 
@@ -67,17 +67,17 @@ class SMSBinaryRequest(DefaultObject):
         return self
 
     @property
-    @serializable(name="campaignId", type=unicode)
+    @serializable(name="campaignId", type='basestring')
     def campaign_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("campaign_id")
 
     @campaign_id.setter
     def campaign_id(self, campaign_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("campaign_id", campaign_id)
 
@@ -86,17 +86,17 @@ class SMSBinaryRequest(DefaultObject):
         return self
 
     @property
-    @serializable(name="operatorClientId", type=unicode)
+    @serializable(name="operatorClientId", type='basestring')
     def operator_client_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("operator_client_id")
 
     @operator_client_id.setter
     def operator_client_id(self, operator_client_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("operator_client_id", operator_client_id)
 

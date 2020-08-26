@@ -30,17 +30,17 @@ class LineData(DefaultObject):
         return self
 
     @property
-    @serializable(name="url", type=unicode)
+    @serializable(name="url", type='basestring')
     def url(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("url")
 
     @url.setter
     def url(self, url):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("url", url)
 
@@ -49,17 +49,17 @@ class LineData(DefaultObject):
         return self
 
     @property
-    @serializable(name="thumbnailUrl", type=unicode)
+    @serializable(name="thumbnailUrl", type='basestring')
     def thumbnail_url(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("thumbnail_url")
 
     @thumbnail_url.setter
     def thumbnail_url(self, thumbnail_url):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("thumbnail_url", thumbnail_url)
 
@@ -68,17 +68,17 @@ class LineData(DefaultObject):
         return self
 
     @property
-    @serializable(name="duration", type=unicode)
+    @serializable(name="duration", type='basestring')
     def duration(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("duration")
 
     @duration.setter
     def duration(self, duration):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("duration", duration)
 
@@ -87,17 +87,17 @@ class LineData(DefaultObject):
         return self
 
     @property
-    @serializable(name="packageId", type=unicode)
+    @serializable(name="packageId", type='basestring')
     def package_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("package_id")
 
     @package_id.setter
     def package_id(self, package_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("package_id", package_id)
 
@@ -106,17 +106,17 @@ class LineData(DefaultObject):
         return self
 
     @property
-    @serializable(name="stickerId", type=unicode)
+    @serializable(name="stickerId", type='basestring')
     def sticker_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("sticker_id")
 
     @sticker_id.setter
     def sticker_id(self, sticker_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("sticker_id", sticker_id)
 
@@ -125,17 +125,17 @@ class LineData(DefaultObject):
         return self
 
     @property
-    @serializable(name="text", type=unicode)
+    @serializable(name="text", type='basestring')
     def text(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("text")
 
     @text.setter
     def text(self, text):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("text", text)
 
@@ -144,17 +144,17 @@ class LineData(DefaultObject):
         return self
 
     @property
-    @serializable(name="validityPeriod", type=long)
+    @serializable(name="validityPeriod", type=float)
     def validity_period(self):
         """
-        Property is of type: long
+        Property is of type: float
         """
         return self.get_field_value("validity_period")
 
     @validity_period.setter
     def validity_period(self, validity_period):
         """
-        Property is of type: long
+        Property is of type: float
         """
         self.set_field_value("validity_period", validity_period)
 

@@ -46,17 +46,17 @@ class NotificationOptions(DefaultObject):
         return self
 
     @property
-    @serializable(name="soundName", type=unicode)
+    @serializable(name="soundName", type='basestring')
     def sound_name(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("sound_name")
 
     @sound_name.setter
     def sound_name(self, sound_name):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("sound_name", sound_name)
 
@@ -84,17 +84,17 @@ class NotificationOptions(DefaultObject):
         return self
 
     @property
-    @serializable(name="contentUrl", type=unicode)
+    @serializable(name="contentUrl", type='basestring')
     def content_url(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("content_url")
 
     @content_url.setter
     def content_url(self, content_url):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("content_url", content_url)
 
@@ -103,17 +103,17 @@ class NotificationOptions(DefaultObject):
         return self
 
     @property
-    @serializable(name="category", type=unicode)
+    @serializable(name="category", type='basestring')
     def category(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("category")
 
     @category.setter
     def category(self, category):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("category", category)
 

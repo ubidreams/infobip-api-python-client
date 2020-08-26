@@ -1,12 +1,12 @@
 import base64
 
-from exception import ApiException, ApiRequestError, ApiRequestErrorDetails
+from .exception import ApiException, ApiRequestError, ApiRequestErrorDetails
 
 __author__ = 'mstipanov'
 
-import httplib
+import http.client
 import urllib
-from urlparse import urlparse
+from urllib.parse import urlparse
 import json
 
 class HttpClient:
@@ -44,16 +44,16 @@ class HttpClient:
 
         if context:
             if isinstance(context, dict):
-                params = urllib.urlencode(context)
+                params = urllib.parse.urlencode(context)
             else:
-                params = urllib.urlencode(context.to_dict())
+                params = urllib.parse.urlencode(context.to_dict())
             url = url + ("?%s" % params)
 
         u = urlparse(url)
         if (u.scheme == "https"):
-            connection = httplib.HTTPSConnection(u.netloc)
+            connection = http.client.HTTPSConnection(u.netloc)
         else:
-            connection = httplib.HTTPConnection(u.netloc)
+            connection = http.client.HTTPConnection(u.netloc)
 
         headers = {}
         if username:
@@ -88,7 +88,7 @@ class HttpClient:
             raise ApiException(ApiRequestError(None, ApiRequestErrorDetails(response.reason + " - " + response_content)))
 
         contentType = response.getheader("Content-Type")
-        if contentType and contentType.startswith("application/json") and not basestring == valueType:
-            return valueType.from_JSON(response_content)
+        if contentType and contentType.startswith("application/json") and not 'basestring' == valueType:
+            return valueType.from_JSON(response_content.decode())
 
         return response_content

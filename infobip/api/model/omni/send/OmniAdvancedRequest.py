@@ -38,17 +38,17 @@ class OmniAdvancedRequest(DefaultObject):
         return self
 
     @property
-    @serializable(name="bulkId", type=unicode)
+    @serializable(name="bulkId", type='basestring')
     def bulk_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("bulk_id")
 
     @bulk_id.setter
     def bulk_id(self, bulk_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("bulk_id", bulk_id)
 
@@ -57,17 +57,17 @@ class OmniAdvancedRequest(DefaultObject):
         return self
 
     @property
-    @serializable(name="scenarioKey", type=unicode)
+    @serializable(name="scenarioKey", type='basestring')
     def scenario_key(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("scenario_key")
 
     @scenario_key.setter
     def scenario_key(self, scenario_key):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("scenario_key", scenario_key)
 
@@ -285,17 +285,17 @@ class OmniAdvancedRequest(DefaultObject):
         return self
 
     @property
-    @serializable(name="notifyUrl", type=unicode)
+    @serializable(name="notifyUrl", type='basestring')
     def notify_url(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("notify_url")
 
     @notify_url.setter
     def notify_url(self, notify_url):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("notify_url", notify_url)
 
@@ -304,17 +304,17 @@ class OmniAdvancedRequest(DefaultObject):
         return self
 
     @property
-    @serializable(name="notifyContentType", type=unicode)
+    @serializable(name="notifyContentType", type='basestring')
     def notify_content_type(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("notify_content_type")
 
     @notify_content_type.setter
     def notify_content_type(self, notify_content_type):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("notify_content_type", notify_content_type)
 
@@ -323,17 +323,17 @@ class OmniAdvancedRequest(DefaultObject):
         return self
 
     @property
-    @serializable(name="callbackData", type=unicode)
+    @serializable(name="callbackData", type='basestring')
     def callback_data(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("callback_data")
 
     @callback_data.setter
     def callback_data(self, callback_data):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("callback_data", callback_data)
 

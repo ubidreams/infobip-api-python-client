@@ -46,17 +46,17 @@ class Language(DefaultObject):
         return self
 
     @property
-    @serializable(name="languageCode", type=unicode)
+    @serializable(name="languageCode", type='basestring')
     def language_code(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("language_code")
 
     @language_code.setter
     def language_code(self, language_code):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("language_code", language_code)
 

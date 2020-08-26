@@ -10,17 +10,17 @@ from infobip.api.model.Status import Status
 
 class SMSResponseDetails(DefaultObject):
     @property
-    @serializable(name="to", type=unicode)
+    @serializable(name="to", type='basestring')
     def to(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("to")
 
     @to.setter
     def to(self, to):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("to", to)
 
@@ -67,17 +67,17 @@ class SMSResponseDetails(DefaultObject):
         return self
 
     @property
-    @serializable(name="messageId", type=unicode)
+    @serializable(name="messageId", type='basestring')
     def message_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("message_id")
 
     @message_id.setter
     def message_id(self, message_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("message_id", message_id)
 

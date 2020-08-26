@@ -10,17 +10,17 @@ from infobip.api.model.sms.mt.send.SMSResponseDetails import SMSResponseDetails
 
 class SMSResponse(DefaultObject):
     @property
-    @serializable(name="bulkId", type=unicode)
+    @serializable(name="bulkId", type='basestring')
     def bulk_id(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("bulk_id")
 
     @bulk_id.setter
     def bulk_id(self, bulk_id):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("bulk_id", bulk_id)
 
@@ -29,17 +29,17 @@ class SMSResponse(DefaultObject):
         return self
 
     @property
-    @serializable(name="trackingProcessKey", type=unicode)
+    @serializable(name="trackingProcessKey", type='basestring')
     def tracking_process_key(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("tracking_process_key")
 
     @tracking_process_key.setter
     def tracking_process_key(self, tracking_process_key):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("tracking_process_key", tracking_process_key)
 

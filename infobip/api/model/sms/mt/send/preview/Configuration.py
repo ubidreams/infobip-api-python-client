@@ -29,17 +29,17 @@ class Configuration(DefaultObject):
         return self
 
     @property
-    @serializable(name="transliteration", type=unicode)
+    @serializable(name="transliteration", type='basestring')
     def transliteration(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("transliteration")
 
     @transliteration.setter
     def transliteration(self, transliteration):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("transliteration", transliteration)
 

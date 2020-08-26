@@ -8,17 +8,17 @@ from infobip.util.models import DefaultObject, serializable
 
 class NumberContextRequest(DefaultObject):
     @property
-    @serializable(name="to", type=unicode)
+    @serializable(name="to", type='basestring')
     def to(self):
         """
-        Property is a list of: unicode
+        Property is a list of: 'basestring'
         """
         return self.get_field_value("to")
 
     @to.setter
     def to(self, to):
         """
-        Property is a list of: unicode
+        Property is a list of: 'basestring'
         """
         self.set_field_value("to", to)
 

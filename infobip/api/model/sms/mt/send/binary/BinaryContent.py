@@ -8,17 +8,17 @@ from infobip.util.models import DefaultObject, serializable
 
 class BinaryContent(DefaultObject):
     @property
-    @serializable(name="hex", type=unicode)
+    @serializable(name="hex", type='basestring')
     def hex(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("hex")
 
     @hex.setter
     def hex(self, hex):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("hex", hex)
 

@@ -12,17 +12,17 @@ from infobip.api.model.Status import Status
 
 class NumberContextResponseDetails(DefaultObject):
     @property
-    @serializable(name="to", type=unicode)
+    @serializable(name="to", type='basestring')
     def to(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("to")
 
     @to.setter
     def to(self, to):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("to", to)
 
@@ -31,17 +31,17 @@ class NumberContextResponseDetails(DefaultObject):
         return self
 
     @property
-    @serializable(name="mccMnc", type=unicode)
+    @serializable(name="mccMnc", type='basestring')
     def mcc_mnc(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("mcc_mnc")
 
     @mcc_mnc.setter
     def mcc_mnc(self, mcc_mnc):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("mcc_mnc", mcc_mnc)
 
@@ -50,17 +50,17 @@ class NumberContextResponseDetails(DefaultObject):
         return self
 
     @property
-    @serializable(name="imsi", type=unicode)
+    @serializable(name="imsi", type='basestring')
     def imsi(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("imsi")
 
     @imsi.setter
     def imsi(self, imsi):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("imsi", imsi)
 
@@ -164,17 +164,17 @@ class NumberContextResponseDetails(DefaultObject):
         return self
 
     @property
-    @serializable(name="servingMSC", type=unicode)
+    @serializable(name="servingMSC", type='basestring')
     def serving_m_s_c(self):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         return self.get_field_value("serving_m_s_c")
 
     @serving_m_s_c.setter
     def serving_m_s_c(self, serving_m_s_c):
         """
-        Property is of type: unicode
+        Property is of type: 'basestring'
         """
         self.set_field_value("serving_m_s_c", serving_m_s_c)
 
