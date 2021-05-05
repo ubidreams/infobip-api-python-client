@@ -30,7 +30,7 @@ except(IOError, ImportError):
 my_packages = find_packages()
 
 mod_distutilscore.setup(
-    name='infobip-api-python-client',
+    name='infobip',
     version='2.1.0',
     description='Infobip SMS API client library in Python',
     long_description=long_description,
